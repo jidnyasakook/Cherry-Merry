@@ -1,0 +1,6 @@
+{
+  "name": "Cherry Merry - Gourmet Tutti Frutti",
+  "description": "Pure Ingredients. Vibrant Margins. Premium handcrafted gourmet tutti frutti confectionery crafted to perfection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

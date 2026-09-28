@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cherry Merry | Premium Gourmet Tutti Frutti</title>
+  <meta name="description" content="Pure Ingredients. Vibrant Margins. Handcrafted small-batch gourmet tutti frutti confectionery.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans for clean body text, Syne for high-character display titles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Modular Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR (Sticky, Glassmorphism with Dynamic Scroll Styling)
+       ========================================================================= -->
+  <header class="navbar" id="mainNavbar">
+    <div class="nav-container">
+      
+      <!-- Brand Logo / Wordmark -->
+      <a href="#hero" class="brand-logo" aria-label="Cherry Merry Homepage">
+        <span class="logo-gem"></span>
+        <span class="logo-text">CHERRY MERRY</span>
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#story" class="nav-link">Our Story</a>
+        <a href="#difference" class="nav-link">The Difference</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+      </nav>
+
+      <!-- Cart Action & Mobile Toggle -->
+      <div class="nav-actions">
+        <button class="cart-trigger-btn" id="cartTriggerBtn" aria-label="Open Shopping Cart">
+          <svg class="icon-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+            <path d="M3 6h18"></path>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-counter" id="cartCounter">0</span>
+        </button>
+
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. HERO SECTION (Bold Campaign Headline, Artisanal Focus, Call to Action)
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-glow glow-ruby"></div>
+    <div class="hero-bg-glow glow-gold"></div>
+
+    <div class="hero-container">
+      
+      <!-- Hero Copy -->
+      <div class="hero-content">
+        <div class="hero-tagline">
+          <span class="tagline-dot"></span>
+          <span>Artisanal Confectionery Co.</span>
+          <span class="tagline-sep">·</span>
+          <span>100% Botanical Extracts</span>
+        </div>
+
+        <h1 class="hero-title">
+          Pure Ingredients. <br>
+          <span class="gradient-text">Vibrant Margins.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Premium Quality Crafted to Perfection. Hand-diced raw green papaya infused with cold-pressed fruit extracts and pure cane sugar—reinventing tutti frutti for pastry chefs and gourmet confectioners.
+        </p>
+
+        <!-- Call to Action Buttons -->
+        <div class="hero-cta-group">
+          <a href="#products" class="btn btn-primary">
+            <span>Shop the Collection</span>
+            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#difference" class="btn btn-secondary">
+            <span>Discover The Difference</span>
+          </a>
+        </div>
+
+        <!-- Trust Metrics -->
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-value">100%</span>
+            <span class="metric-label">Plant-Derived Dyes</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">220°C</span>
+            <span class="metric-label">Bake-Stable Snap</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">₹45</span>
+            <span class="metric-label">Per Unit Flat Price</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Display -->
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img src="/images/hero_tutti_frutti_luxury_1790614343705.jpg" alt="Artisanal Tutti Frutti in crystal coupe" class="hero-img" loading="eager" referrerpolicy="no-referrer">
+          <div class="hero-image-badge">
+            <span class="badge-gem"></span>
+            <div>
+              <p class="badge-title">Small-Batch Batch No. 042</p>
+              <p class="badge-sub">Copper kettle reduced · Zero synthetic fillers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. THE CHERRY MERRY DIFFERENCE (Problem vs Solution Two-Column Matrix)
+       ========================================================================= -->
+  <section class="section difference-section" id="difference">
+    <div class="section-container">
+      
+      <div class="section-header">
+        <p class="section-kicker">Integrity in Every Gem</p>
+        <h2 class="section-title">The Cherry Merry Difference</h2>
+        <p class="section-desc">
+          For decades, commercial tutti frutti relied on synthetic coal-tar dyes, bleached cardboard pulp, and cloying corn syrup. We completely rebuilt the recipe from the soil up.
+        </p>
+      </div>
+
+      <div class="difference-grid">
+        
+        <!-- Column 1: Mass-Produced Sweets (The Problem) -->
+        <div class="diff-card card-problem">
+          <div class="diff-card-header">
+            <span class="diff-tag problem-tag">Mass-Produced Commercial Sweets</span>
+            <h3 class="diff-heading">Synthetic & Bleached</h3>
+          </div>
+
+          <ul class="diff-list">
+            <li class="diff-item">
+              <span class="diff-icon icon-cross">✕</span>
+              <div>
+                <strong>Chemical Azo Dyes:</strong> Artificial Red #40, Tartrazine, and Brilliant Blue that leave chemical aftertastes.
+              </div>
+            </li>
+            <li class="diff-item">
+              <span class="diff-icon icon-cross">✕</span>
+              <div>
+                <strong>Color Bleeding in Batter:</strong> Soluble artificial syrups leach during baking, turning dough into muddy halos.
+              </div>
+            </li>
+            <li class="diff-item">
+              <span class="diff-icon icon-cross">✕</span>
+              <div>
+                <strong>Sulphur Preservatives:</strong> Bleached fruit pulp soaked in sodium metabisulfite to mask low-grade produce.
+              </div>
+            </li>
+            <li class="diff-item">
+              <span class="diff-icon icon-cross">✕</span>
+              <div>
+                <strong>Rubbery Gelatinous Chew:</strong> Tough texture that resists knives and melts into gooey cavities in heat.
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Cherry Merry Artisanal Standard (The Solution) -->
+        <div class="diff-card card-solution">
+          <div class="diff-card-header">
+            <span class="diff-tag solution-tag">Cherry Merry Artisanal Standard</span>
+            <h3 class="diff-heading">100% Pure & Small-Batch</h3>
+          </div>
+
+          <ul class="diff-list">
+            <li class="diff-item">
+              <span class="diff-icon icon-check">✓</span>
+              <div>
+                <strong>Botanical Plant Extracts:</strong> Real beetroot, cold-pressed spinach chlorophyll, and Himalayan saffron.
+              </div>
+            </li>
+            <li class="diff-item">
+              <span class="diff-icon icon-check">✓</span>
+              <div>
+                <strong>Zero-Bleed Crystallization:</strong> Proprietary sugar curing locks color within fruit fibers without tinting frostings.
+              </div>
+            </li>
+            <li class="diff-item">
+              <span class="diff-icon icon-check">✓</span>
+              <div>
+                <strong>Farm-Fresh Raw Papaya:</strong> Crisp heirloom green papaya hand-diced within 24 hours of harvest.
+              </div>
+            </li>
+            <li class="diff-item">
+              <span class="diff-icon icon-check">✓</span>
+              <div>
+                <strong>Tender Jewel-Snap Texture:</strong> Clean, crisp bite that retains pleasant elasticity from freezer to hot oven.
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. PRODUCT ECOSYSTEM (Three Interactive Cards with Stylized ₹45 Tags)
+       ========================================================================= -->
+  <section class="section products-section" id="products">
+    <div class="section-container">
+      
+      <div class="section-header">
+        <p class="section-kicker">Signature Harvest Editions</p>
+        <h2 class="section-title">The Gourmet Tutti Frutti Ecosystem</h2>
+        <p class="section-desc">
+          Crafted to elevate bakery masterpieces, frozen gelato, tea cakes, and artisanal confectionery. Each signature line represents distinct fruit infusion profiles.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        
+        <!-- Product 1: Red Line -->
+        <article class="product-card card-ruby" data-id="red-line" data-name="Cherry Merry Red Line" data-price="45" data-color="#ef233c">
+          <div class="product-visual">
+            <img src="/images/product_red_line_1790614358944.jpg" alt="Cherry Merry Red Line gourmet tutti frutti jar" class="product-img" loading="lazy" referrerpolicy="no-referrer">
+            <span class="product-glow glow-red"></span>
+            <div class="price-ribbon">₹45 <span class="unit-sub">/ 100g</span></div>
+          </div>
+
+          <div class="product-body">
+            <div class="product-meta">
+              <span class="product-line-label text-ruby">Signature Red Line</span>
+              <span class="product-dot">·</span>
+              <span>Tart Wild Cherry</span>
+            </div>
+
+            <h3 class="product-title">Ruby Red Line</h3>
+            <p class="product-tagline">"Bold. Juicy. Timeless."</p>
+            <p class="product-desc">
+              Translucent ruby fruit gems infused with tart wild cherry essence and botanical beetroot extract. Imparts a luxurious jewel finish to holiday panettone, plum cakes, and shortbread.
+            </p>
+
+            <div class="product-attributes">
+              <span class="attr-pill">Wild Cherry Glaze</span>
+              <span class="attr-pill">Beetroot Botanical</span>
+              <span class="attr-pill">Bake-Stable</span>
+            </div>
+
+            <div class="product-actions">
+              <button class="btn btn-add-cart btn-red" onclick="addToCart('red-line', 'Red Line Tutti Frutti', 45, '/images/product_red_line_1790614358944.jpg')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cart-btn-icon"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span>Add to Cart — ₹45</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2: Green Line -->
+        <article class="product-card card-emerald" data-id="green-line" data-name="Cherry Merry Green Line" data-price="45" data-color="#10b981">
+          <div class="product-visual">
+            <img src="/images/product_green_line_1790614371244.jpg" alt="Cherry Merry Green Line zesty tutti frutti jar" class="product-img" loading="lazy" referrerpolicy="no-referrer">
+            <span class="product-glow glow-green"></span>
+            <div class="price-ribbon">₹45 <span class="unit-sub">/ 100g</span></div>
+          </div>
+
+          <div class="product-body">
+            <div class="product-meta">
+              <span class="product-line-label text-emerald">Signature Green Line</span>
+              <span class="product-dot">·</span>
+              <span>Kaffir Lime & Mint</span>
+            </div>
+
+            <h3 class="product-title">Zesty Green Line</h3>
+            <p class="product-tagline">"Zesty. Bright. Uplifting."</p>
+            <p class="product-desc">
+              Vibrant emerald fruit morsels imbued with crisp kaffir lime zest and natural chlorophyll. Delivers a refreshing citrus spark to artisanal ice creams, pistachio cakes, and buttery brioche.
+            </p>
+
+            <div class="product-attributes">
+              <span class="attr-pill">Cold-Pressed Lime</span>
+              <span class="attr-pill">Pure Chlorophyll</span>
+              <span class="attr-pill">Crisp Snap</span>
+            </div>
+
+            <div class="product-actions">
+              <button class="btn btn-add-cart btn-green" onclick="addToCart('green-line', 'Green Line Tutti Frutti', 45, '/images/product_green_line_1790614371244.jpg')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cart-btn-icon"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span>Add to Cart — ₹45</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3: Yellow Line -->
+        <article class="product-card card-amber" data-id="yellow-line" data-name="Cherry Merry Yellow Line" data-price="45" data-color="#f59e0b">
+          <div class="product-visual">
+            <img src="/images/product_yellow_line_1790614383667.jpg" alt="Cherry Merry Yellow Line sunny tutti frutti jar" class="product-img" loading="lazy" referrerpolicy="no-referrer">
+            <span class="product-glow glow-yellow"></span>
+            <div class="price-ribbon">₹45 <span class="unit-sub">/ 100g</span></div>
+          </div>
+
+          <div class="product-body">
+            <div class="product-meta">
+              <span class="product-line-label text-amber">Signature Yellow Line</span>
+              <span class="product-dot">·</span>
+              <span>Alphonso Mango</span>
+            </div>
+
+            <h3 class="product-title">Sunny Yellow Line</h3>
+            <p class="product-tagline">"Sunny. Sweet. Golden."</p>
+            <p class="product-desc">
+              Radiant golden amber cubes steeped with Alphonso mango nectar and sun-dried wild saffron essence. Brings sweet tropical warmth to sourdough inclusions, tea cookies, and kulfi.
+            </p>
+
+            <div class="product-attributes">
+              <span class="attr-pill">Alphonso Puree</span>
+              <span class="attr-pill">Wild Saffron Hue</span>
+              <span class="attr-pill">Honeyed Finish</span>
+            </div>
+
+            <div class="product-actions">
+              <button class="btn btn-add-cart btn-yellow" onclick="addToCart('yellow-line', 'Yellow Line Tutti Frutti', 45, '/images/product_yellow_line_1790614383667.jpg')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cart-btn-icon"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span>Add to Cart — ₹45</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. CUSTOMER REVIEWS (Interactive Slider + Continuous Marquee)
+       ========================================================================= -->
+  <section class="section reviews-section" id="reviews">
+    <div class="section-container">
+      
+      <div class="section-header">
+        <p class="section-kicker">Praised by Confectioners</p>
+        <h2 class="section-title">Tested in Artisanal Kitchens</h2>
+        <p class="section-desc">
+          From micro-bakeries to luxury pastry ateliers, see why chefs choose Cherry Merry for their most delicate dessert creations.
+        </p>
+      </div>
+
+      <!-- Slider Controls Bar -->
+      <div class="slider-controls-bar">
+        <div class="slider-indicators" id="sliderDots">
+          <!-- Populated by JavaScript -->
+        </div>
+        <div class="slider-nav-btns">
+          <button class="slider-arrow-btn" id="prevReviewBtn" aria-label="Previous review">←</button>
+          <button class="slider-arrow-btn" id="nextReviewBtn" aria-label="Next review">→</button>
+        </div>
+      </div>
+
+      <!-- Interactive Testimonial Slider Track -->
+      <div class="reviews-slider-window" id="reviewsSliderWindow">
+        <div class="reviews-slider-track" id="reviewsSliderTrack">
+          
+          <!-- Review 1 -->
+          <div class="review-card active">
+            <div class="review-stars">★★★★★</div>
+            <blockquote class="review-quote">
+              "Cherry Merry’s Red Line completely solved our batter bleeding problem in Italian panettone. The crisp bite and natural cherry note are unmatched."
+            </blockquote>
+            <div class="review-author">
+              <div class="author-avatar avatar-red">AS</div>
+              <div>
+                <p class="author-name">Chef Ananya Sen</p>
+                <p class="author-role">Head Pastry Chef · Atelier Pâtisserie, Mumbai</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote class="review-quote">
+              "The Zesty Green gems give our citrus sourdough tea cakes an astonishing natural aroma. You can immediately taste the real cold-pressed lime."
+            </blockquote>
+            <div class="review-author">
+              <div class="author-avatar avatar-green">VR</div>
+              <div>
+                <p class="author-name">Vikramaditya Rathore</p>
+                <p class="author-role">Founder · The Sourdough Studio, Bengaluru</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote class="review-quote">
+              "Switching from commercial synthetic tutti frutti to Cherry Merry doubled our repeat wholesale cake orders. Clients rave about the clean, non-rubbery snap."
+            </blockquote>
+            <div class="review-author">
+              <div class="author-avatar avatar-yellow">MK</div>
+              <div>
+                <p class="author-name">Meera Khurana</p>
+                <p class="author-role">Master Confectioner · Sweet Heritage, Delhi</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote class="review-quote">
+              "The Golden Yellow line holds its integrity even at sub-zero temperatures in our Cassata gelato without turning into rock-hard ice crystals."
+            </blockquote>
+            <div class="review-author">
+              <div class="author-avatar avatar-yellow">RK</div>
+              <div>
+                <p class="author-name">Rohan Kulkarni</p>
+                <p class="author-role">Artisanal Gelatiere · Cuore di Gelato, Pune</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 5 -->
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote class="review-quote">
+              "The colors look like polished jewels on top of holiday fruitcakes and shortbread. At ₹45 a pack, it is pure accessible luxury for passionate home bakers."
+            </blockquote>
+            <div class="review-author">
+              <div class="author-avatar avatar-red">TD</div>
+              <div>
+                <p class="author-name">Tara D'Souza</p>
+                <p class="author-role">Food Stylist & Home Baker · Panaji, Goa</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. SHOPPING CART DRAWER (Slide-Out Interactive Panel)
+       ========================================================================= -->
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart Drawer">
+    <div class="cart-header">
+      <div class="cart-title-box">
+        <h3 class="cart-title">Your Gourmet Bag</h3>
+        <span class="cart-subtitle" id="cartTotalItemsLabel">0 items</span>
+      </div>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart">✕</button>
+    </div>
+
+    <!-- Free Delivery Progress Meter -->
+    <div class="cart-shipping-bar">
+      <p class="shipping-info" id="shippingThresholdText">Add ₹199 for Free Priority Delivery</p>
+      <div class="shipping-track">
+        <div class="shipping-fill" id="shippingProgressBar" style="width: 0%"></div>
+      </div>
+    </div>
+
+    <!-- Itemized List -->
+    <div class="cart-items" id="cartItemsList">
+      <div class="cart-empty-state" id="cartEmptyState">
+        <p class="empty-icon">🛍️</p>
+        <p class="empty-title">Your bag is empty</p>
+        <p class="empty-desc">Explore the signature Red, Green, and Yellow collections above.</p>
+      </div>
+    </div>
+
+    <!-- Cart Footer & Checkout -->
+    <div class="cart-footer">
+      <div class="cart-summary-row">
+        <span>Subtotal</span>
+        <span class="cart-subtotal-val" id="cartSubtotalVal">₹0</span>
+      </div>
+      <div class="cart-summary-row text-muted">
+        <span>Artisanal Packaging</span>
+        <span class="text-free">Complimentary</span>
+      </div>
+      <button class="btn btn-checkout" id="checkoutBtn" onclick="handleCheckout()">
+        <span>Proceed to Checkout</span>
+        <span id="checkoutAmountVal">₹0</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       7. FOOTER SECTION (Branding, Newsletter Signup, Socials, Portfolio Credit)
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <!-- Brand & Mission -->
+      <div class="footer-col brand-col">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-gem"></span>
+          <span class="logo-text">CHERRY MERRY</span>
+        </a>
+        <p class="footer-bio">
+          Pure Ingredients. Vibrant Margins. The new benchmark for natural gourmet tutti frutti confectionery. Hand-diced, small-batch, and botanical.
+        </p>
+        <p class="footer-copy">© 2026 Cherry Merry Confections Inc. All rights reserved.</p>
+      </div>
+
+      <!-- Quick Navigation -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Collections</h4>
+        <ul class="footer-links">
+          <li><a href="#products">Ruby Red Line</a></li>
+          <li><a href="#products">Zesty Green Line</a></li>
+          <li><a href="#products">Sunny Golden Yellow</a></li>
+          <li><a href="#difference">The Artisanal Difference</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter & Socials -->
+      <div class="footer-col newsletter-col">
+        <h4 class="footer-heading">Baker's Digest</h4>
+        <p class="newsletter-desc">Subscribe for seasonal fruit harvest releases, commercial recipes, and volume wholesale pricing.</p>
+        
+        <form class="newsletter-form" id="newsletterForm" onsubmit="handleNewsletter(event)">
+          <input type="email" class="newsletter-input" id="newsletterEmail" placeholder="Enter your email address" required>
+          <button type="submit" class="newsletter-btn">Join</button>
+        </form>
+        <p class="form-feedback" id="newsletterFeedback"></p>
+
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+          <a href="#" class="social-icon" aria-label="Pinterest">PIN</a>
+          <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">IN</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Modular Vanilla JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
